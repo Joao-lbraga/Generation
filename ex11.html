@@ -1,0 +1,34 @@
+<script>
+var requisito, ano_nasc, idade, ano_adm, codigo, tempo_emp, ano_atual = 2020;
+
+		codigo=prompt("digite o seu codigo: ");
+		ano_nasc=parseFloat(prompt("digite o seu ano de nascimento: "));
+		ano_adm=parseFloat(prompt("digite o seu ano de admissão na empresa: "));
+		idade = ano_atual - ano_nasc;
+		tempo_emp = ano_atual - ano_adm;
+
+		if (idade >= 65)
+		{
+			requisito = "requerer aposentadoria";	
+		}
+		else
+		{
+			if (tempo_emp >= 30)
+			{
+				requisito ="requerer aposentadoria";
+			}
+			else
+			{
+				if (idade >= 60 && tempo_emp >=25)
+				{
+					requisito = "requerer aposentadoria";
+				}
+				else
+				{
+					requisito = "não requerer";
+				}
+			}
+		}
+		alert("Sua idade é: " + idade +"\nSeu tempo de empresa é: " + tempo_emp + "\nE seu requisito é:" + requisito);
+
+</script>
