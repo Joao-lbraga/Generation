@@ -1,0 +1,14 @@
+* {box-sizing: border-box; margin: 0; padding: 0;}
+
+h1 {text-align: center;
+color: crimson;}
+
+textarea {resize: none;}
+
+#caixa {margin: 0 auto;
+        width: 500px; 
+        background-color: lightblue; 
+        border: red 1px solid;
+        border-radius: 10px;
+        padding: 20px;
+    background-image: url(https://img.quizur.com/f/img5de9c66aa81a23.28942515.jpg?lastEdited=1575601827);

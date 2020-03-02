@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        var texto="o cavalo negro"
+        var result=""
+        var vetor=texto.split(" "); //transforma string em vetor
+        alert(vetor)
+        alert("tamanho do vetor: "+vetor.length)
+
+        for(var i=0; i<vetor.length;i++) {
+            //replace (valor atual, novo valor)
+            vetor[i]=vetor[i].replace(vetor[i].slice(0,1),vetor[i].slice(0,1).toUpperCase());
+
+            result=result+" "+vetor[i];
+        }
+        document.write(result);
+    </script>
+</body>
+</html>

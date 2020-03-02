@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/estilo-formulario.css">
+</head>
+<body>
+    <h1>Formulário</h1>
+    <br><br>
+    <div id="caixa">
+        <form action="#" method="POST">
+        <!-- <label for="">Nome:</label> -->
+        <input type="text" name="nome" maxlength="20" size="50" placeholder="Digite seu nome">
+        <br><br>
+        <label for="">Idade:</label>
+        <input type="number" name="idade" min="18" max="29">
+        <br><br>
+        <label for="">Nascimento:</label>
+        <input type="date" name="nasc">
+        <br><br>
+        <label for="">Observação:</label>
+        <textarea name="obs" cols="20" rows="4"></textarea name>
+            <br><br>
+            <select name="estados">
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+            </select>
+            <br><br>
+            <label for="">Senha:</label>
+            <input type="password" name="senha">
+            <br><br>
+            <label for="">Masculino</label>
+            <input type="radio" name="radio" value="M" id="M">
+            <label for="">Feminino</label>
+            <input type="radio" name="radio" value="F" id="F">
+            <br><br>
+            <input type="checkbox">
+            <label for="">Almoço</label>
+            <input type="checkbox">
+            <label for="">Vale transporte</label>
+            <br><br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar campos">
+
+
+        </form>
+    </div>
+</body>
+</html>

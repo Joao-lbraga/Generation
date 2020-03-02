@@ -1,0 +1,33 @@
+/* comentário */
+
+/*
+    sintaxe:
+    elemento {propriedade:valor;
+        propriedade: valor}
+        */
+        /* seletor de elemento */
+h1 {
+    color: navy;
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Lacquer', sans-serif;
+}
+/* seletor de id */
+#paragrafo1{
+    color: powderblue;
+    font-family: 'lacquer', Arial, Helvetica, sans-serif;
+}
+#paragrafo2{
+    color: rebeccapurple;
+    font-family: fantasy;
+    font-style: italic;
+    background-color: lawngreen;
+    font-size: 30px;
+    border-radius: 10px;
+}
+.grupo1{
+    font-size: 50px;
+}
+.grupo2{
+    color: seagreen;
+}

@@ -1,0 +1,43 @@
+*{box-sizing: border-box; margin: 0; padding: 0;}
+
+header {width: 1200px;
+    height: 185px;
+    background-color: blue;}
+
+nav {width: 1200px;
+    height: 70px;
+    background-color: gold;}
+
+aside {width: 280px;
+      height:1000px;
+      background-color: green;
+      float: left;}
+
+section {width: 460px;
+        height: 500px;
+        background-color: orangered;
+        float: left;}
+
+section {width: 460px;
+        height: 500px;
+        background-color: orchid;
+        float: left;}
+
+section {width: 460px;
+        height: 500px;
+        background-color: rebeccapurple;
+        float: left;}
+
+section {width: 460px;
+        height: 500px;
+        background-color: royalblue;
+        float: left;}
+
+footer {width: 1200px;
+        height: 200px; 
+        background-color: black; 
+        clear: both;}
+
+#caixa {width: 1200px;
+        height: 1455px;
+      margin: 0 auto;}

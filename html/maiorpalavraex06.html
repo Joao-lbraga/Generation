@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        var texto=prompt("Digite seu texto:");
+        var vetor=texto.split(" ");
+        var maior = vetor[0];
+
+        for (var i = 1; i < vetor.length; i++){
+            if (maior.length<vetor[i].length){
+                maior=vetor[i];
+            }
+        }
+        console.log(maior);
+
+    </script>
+</body>
+</html>
