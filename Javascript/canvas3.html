@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    #quadro {border: 1px solid navy;
+            background-color;}
+    </style>
+</head>
+<body>
+    <canvas width="200" height="200" id="quadro">
+        <!-- <img src="assets/img/shrek.jfif"> -->
+    </canvas>
+    
+    <script>
+        var canvas=document.getElementById("quadro")
+        if (canvas.getContext) {
+            var ctx=canvas.getContext("2d")
+            ctx.beginPath()
+            ctx.fillStyle="navy"
+            //desenhando o circulo
+            ctx.arc(100,100,40,Math.PI/180*45,Math.PI/180*315,false)
+            ctx.stroke()
+            //fazendo as linhas
+            ctx.beginPath()
+            ctx.moveTo(100,100)
+            ctx.lineTo(129,129)
+            ctx.stroke()
+            ctx.beginPath()
+            ctx.moveTo(100,100)
+            ctx.lineTo(129,71)
+            ctx.stroke()
+
+            
+
+        }
+        else {
+            alert ("n vai da n")
+        }
+    </script>
+</body>
+</html>

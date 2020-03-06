@@ -1,38 +1,41 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt=br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        .item{
+            color: aqua;
+        }
+    </style>
 </head>
 <body>
-    
+    <ol id="grupo">
+      
+    </ol> 
+    <button id="adicionar" onclick= "adicionar()">adicionar</button>
+    <button id="remover" ondblclick="remover()">Remover</button>
+
     <script>
-    try {
-        function notaFinal (n1,n2,n3,n4,nf)
-        {
-            var media4= (n1+n2+n3+n4)/4
-            var mediaf=(n1+n2+n3+n4+nf)/5
-            //retornando o vetor com os resultados
-            var notaFinal=[media4,mediaf]
-            return notaFinal
+        var i=2
+
+        function adicionar() {
+           var texto=prompt("digite um produto");
+           var ol = document.getElementById("grupo");
+           var li = document.createElement("li");
+           li.className="item";
+           li.appendChild(document.createTextNode(texto));
+            ol.appendChild(li);
 
         }
-        var n1=8
-        var n2=5
-        var n3=10
-        var n4=8
-        var nf=3
-        var media4=notaFinal(n1,n2,n3,n4)[0]
-        var mediaf=notaFinal(n1,n2,n3,n4,nf)[1]
-        alert ("Média com 4 notas: "+media4)
-        alert ("Média com 5 notas: "+mediaf)
-    }
-    catch (erro){
-        alert (erro)
-    }
 
+        function remover() {
+            var ul = document.getElementById("grupo");
+            ul.innerHTML = "Lista removida!!";
+            ul.length = 0;
+        }
     </script>
+
 </body>
 </html>

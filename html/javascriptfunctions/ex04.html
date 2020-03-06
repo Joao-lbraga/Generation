@@ -9,17 +9,19 @@
 <body>
     
     <script>
-        
-        function conversorTemp(tc,tf)
+        try {
+        function nomeCompleto (nome,sobrenome)
         {
-            tf=(tc*9+160)/5
-            return tf
+            var nomeCompleto =nome+" "+sobrenome
+            return noomeCompleto
         }
-        var tc=prompt("celsius")
-
-       var a=conversorTemp(tc)
-       console.log("A temperatura em celsius é "+tc+ " e a temperatura em fahrenheit é: "+a)
-
+        var completo = nomeCompleto("Fezinho","Patatyy")
+        alert (completo)
+    }
+    catch(erro)
+    {
+        alert ("Deu ruim! Erro: "+erro)
+    }
         </script>
 </body>
 </html>

@@ -9,19 +9,30 @@
 <body>
     
     <script>
-        try {
-        function nomeCompleto (nome,sobrenome)
+    try {
+        function notaFinal (n1,n2,n3,n4,nf)
         {
-            var nomeCompleto =nome+" "+sobrenome
-            return noomeCompleto
+            var media4= (n1+n2+n3+n4)/4
+            var mediaf=(n1+n2+n3+n4+nf)/5
+            //retornando o vetor com os resultados
+            var notaFinal=[media4,mediaf]
+            return notaFinal
+
         }
-        var completo = nomeCompleto("Fezinho","Patatyy")
-        alert (completo)
+        var n1=8
+        var n2=5
+        var n3=10
+        var n4=8
+        var nf=3
+        var media4=notaFinal(n1,n2,n3,n4)[0]
+        var mediaf=notaFinal(n1,n2,n3,n4,nf)[1]
+        alert ("Média com 4 notas: "+media4)
+        alert ("Média com 5 notas: "+mediaf)
     }
-    catch(erro)
-    {
-        alert ("Deu ruim! Erro: "+erro)
+    catch (erro){
+        alert (erro)
     }
-        </script>
+
+    </script>
 </body>
 </html>
